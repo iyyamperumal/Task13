@@ -1,0 +1,114 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+}
+
+.top {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Atlantic_near_Faroe_Islands.jpg/1200px-Atlantic_near_Faroe_Islands.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: lighten;
+  width: inherit;
+  height: 100vh;
+  padding: 20px;
+  align-content: center;
+}
+
+.bottom {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Atlantic_near_Faroe_Islands.jpg/1200px-Atlantic_near_Faroe_Islands.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: lighten;
+  width: inherit;
+  height: 50vh;
+  padding: 20px;
+  align-content: center;
+}
+
+input {
+  margin: 5px;
+  padding: 15px;
+  width: 350px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  font-size: larger;
+  background-color: beige;
+}
+
+.btn {
+  padding: 15px;
+  font-size: larger;
+  background-color: skyblue;
+}
+
+.element {
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+.pic-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.extra {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img1 {
+  width: 50%;
+  height: auto;
+}
+
+.main {
+  color: black;
+}
+
+.review {
+  background-color: whitesmoke;
+}
+
+.img2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+@media screen and (min-width:320px) and (max-width:760px) {
+  .element {
+    flex-direction: column;
+  }
+
+  .detail {
+    flex-direction: column;
+  }
+
+  .pic-detail {
+    flex-direction: column;
+  }
+
+  .extra {
+    flex-direction: column-reverse;
+  }
+}
