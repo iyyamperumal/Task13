@@ -82,7 +82,7 @@ function App() {
       {/* Elements Component mapping and using */}
       <span className='element'>
         {eledata.map((data2) => {
-          return <Element {...data2} key={data2.name} />;
+          return <Element {...data2} key={data2.name} />
         })};
       </span>
       {/* Picture and details component mapping and using */}
