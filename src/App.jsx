@@ -77,19 +77,19 @@ function App() {
     <>
       {/* page Top Components mapping and using */}
       {lookdata.map((data1) => {
-        if (data1.type === "top") { return <Topbottom {...data1} value={data1.value} key={data1.type} />; }
-      })};
+        if (data1.type === "top") { return <Topbottom {...data1} value={data1.value} key={data1.type} /> }
+      })}
       {/* Elements Component mapping and using */}
       <span className='element'>
         {eledata.map((data2) => {
           return <Element {...data2} key={data2.name} />
-        })};
+        })}
       </span>
       {/* Picture and details component mapping and using */}
       <span className='pic-detail'>
         {picdata.map((data3) => {
           return (<Picturedetail {...data3} key={data3.name} />)
-        })};
+        })}
       </span>
       {/* Review component mapping and using */}
       <span className='review'>
@@ -97,13 +97,13 @@ function App() {
         <span className='element'>
           {reviewdata.map((data4) => {
             return <Review {...data4} key={data4.image} />
-          })};
+          })}
         </span>
       </span>
       {/* Page Bottom components mapping and using */}
       {lookdata.map((data1) => {
-        if (data1.type === "bottom") { return <Topbottom {...data1} value={data1.value} key={data1.type} />; }
-      })};
+        if (data1.type === "bottom") { return <Topbottom {...data1} value={data1.value} key={data1.type} /> }
+      })}
 
 
     </>
